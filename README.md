@@ -26,7 +26,19 @@
 
 ### Directory
 
-- _Insert your directory structure_
+```bash
+project/
+├── data/
+│   ├── train.csv
+│   └── test.csv
+│
+├── preprocess.py         # 데이터 불러오기 + 전처리
+├── feature_engineering.py# 파생변수 생성, 이상치 처리
+├── train.py              # 모델 학습, 저장
+├── inference.py          # 예측, 결과 저장
+├── utils.py              # 공통 함수들 (e.g. remove_outliers_iqr)
+└── config.py             # 파일 경로, 하이퍼파라미터 등
+```
 
 ## 3. Data descrption
 
